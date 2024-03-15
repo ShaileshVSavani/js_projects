@@ -13,15 +13,17 @@
     margin:50px auto;
     padding: 30px;
     border-radius: 15px;
-    background-color: #9ac3af62;
+    background-color: #9ac3bf62;
 }
 input{
     margin: 5px;
     padding: 10px;
     width: 100%;
     border-radius: 13px;
-    border: 1px solid black;
-    background-color: #bfd6cbb3;
+    border: 1px solid rgb(170, 165, 165);
+    background-color: #bfd6d1b3;
+    outline: none;
+    font-size: 20px;
 }
 #box{
     display: grid;
