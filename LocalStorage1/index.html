@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comments and Likes</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="comments">
+        <div class="content">
+        <i class="fa-solid fa-comment"></i>
+        <button onclick="addComments()">Add Comment</button>
+        <span id="commentsCount">0</span>
+        </div>
+    </div>
+    <div id="likes">
+        <div class="content">
+            <i class="fa-regular fa-thumbs-up"></i>
+        <button onclick="like()">Like</button>
+        <span id="likeCount">0</span>
+        </div>
+    </div>
+    <div id="dislikes">
+        <div class="content">
+            <i class="fa-regular fa-thumbs-down"></i>
+        <button onclick="dislike()">Dislike</button>
+        <span id="dislikeCount">0</span>
+        </div>
+    </div>
+    <div id="subscription">
+       <div class="content">
+        <i class="fa-regular fa-square-check"></i>
+        <button onclick="subscription()">Subscription</button>
+        <span id="subscriptionCount">0</span>
+       </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
