@@ -19,12 +19,12 @@ const ui = (data) => {
         id.innerHTML = `ID: ${ele.id}`;
 
         let imagesContainer = document.createElement("div");
-        imagesContainer.classList.add("images-container");
+        imagesContainer.setAttribute( "class", "images-container");
     
             ele.images.map((imgUrl) => {
                 let images = document.createElement("img");
                 images.src = imgUrl;
-                images.classList.add("product-img");
+                images.setAttribute("class","product-img");
                 imagesContainer.append(images);
             });
       
@@ -40,13 +40,15 @@ const ui = (data) => {
 
         let thumbnail = document.createElement("img");
         thumbnail.src = ele.thumbnail;
-        thumbnail.classList.add("product-thumbnail");
+        // thumbnail.classList.add("product-thumbnail");
+        thumbnail.setAttribute("class", "product-thumbnail");
 
         let title = document.createElement("h2");
         title.innerHTML = `Title: ${ele.title}`;
         
         let div = document.createElement("div");
-        div.classList.add("product");
+        // div.classList.add("product");
+        div.setAttribute( "class" ,"product");
        
         div.append(
             id, title, brand, category, description, discountPercentage,
