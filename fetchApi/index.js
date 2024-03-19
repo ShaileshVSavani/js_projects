@@ -33,7 +33,7 @@ const ui = (data) => {
         price.innerHTML = `Price: Rs. ${ele.price}`;
 
         let rating = document.createElement("h3");
-        rating.innerHTML = `Rating: ${ele.rating}`;
+        rating.innerHTML = `Rating: ${ele.rating}/5`;
 
         let stock = document.createElement("h3");
         stock.innerHTML = `Stocks: ${ele.stock}`;
@@ -52,7 +52,7 @@ const ui = (data) => {
        
         div.append(
             id, title, brand, category, description, discountPercentage,
-             price, rating, stock, imagesContainer, thumbnail, 
+             price, rating, stock, imagesContainer
         );
 
     

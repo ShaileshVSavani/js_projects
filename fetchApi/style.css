@@ -26,6 +26,7 @@ body {
 
 .product:hover {
     transform: translateY(-5px);
+    
 }
 
 .product img {
@@ -34,6 +35,10 @@ body {
     margin-bottom: 10px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+.product img:hover{
+    scale: calc(1.05);
 }
 
 .product h2,
