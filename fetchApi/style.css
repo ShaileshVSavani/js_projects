@@ -12,6 +12,7 @@ body {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+   
 }
 
 .product {
@@ -28,6 +29,7 @@ body {
     transform: translateY(-5px);
     
 }
+
 
 .product img {
     max-width: 100%;
