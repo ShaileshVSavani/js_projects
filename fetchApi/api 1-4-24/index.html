@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="/api 1-4-24/style.css">
+</head>
+<body>
+    <form id="searchForm">
+        <input type="text" id="searchId" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <select id="filterSelect">
+        <option value="">Filter by Category</option>
+        <!-- Add options dynamically via JavaScript -->
+    </select>
+    <select id="sortSelect">
+        <option value="">Sort by Price</option>
+        <option value="htl">High to Low</option>
+        <option value="lth">Low to High</option>
+    </select>
+    <select id="brandFilterSelect">
+        <option value="">Filter by Brand</option>
+        <option value="Apple" id="apple">Apple</option>
+        <option value="Google" id="google">Google</option>
+        <option value="Microsoft" id="microsoft">Microsoft</option>
+        <option value="Amazon" id="amazon">Amazon</option>
+        <option value="Samsung" id="samsung">Samsung</option>
+        <option value="OPPO" id="oppo">OPPO</option>
+        <option value="Huawei" id="huawei">Huawei</option>
+        <option value="Microsoft Surface">Microsoft Surface</option>
+        <option value="Infinix">Infinix</option>
+        <option value="HP Pavilion">HP Pavilion</option>
+
+        <!-- Add options dynamically via JavaScript -->
+    </select>
+    <div id="box"></div>
+
+    <script src="/api 1-4-24/index.js"></script>
+</body>
+</html>

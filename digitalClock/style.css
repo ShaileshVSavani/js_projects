@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  body{
+      background-color:black;
+  }
+  .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  .clock-container{
+   padding:15px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 10px #555454;
+  }
+  #clock{
+      color: #414141;
+      font-size: 60px;
+  }
+  #date{
+      color:#414141;;
+  }
