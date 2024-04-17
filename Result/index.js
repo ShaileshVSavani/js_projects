@@ -12,6 +12,7 @@ const showInTable = (ele) => {
     console.log(id);
     console.log(ele);
     // updateData(ele.id, ele)();
+    // window.location.reload();
 }
 const showData = (data) => {
     document.getElementById("tbody").innerHTML = "";
@@ -96,6 +97,8 @@ const updateData = async(id, student) => {
     });
     let data = await response.json();
     console.log(data);
+      // Reset the form after updating data
+      document.getElementById("form").reset();
     getdata();
 }
 
@@ -135,12 +138,24 @@ const handleSubmit = (e) => {
         math:document.getElementById("math").value
     }
     console.log(student);
+
+   
+      if (!student.name || !student.rollNo ||
+        isNaN(student.hindi) || student.hindi < 0 || student.hindi > 100 ||
+        isNaN(student.english) || student.english < 0 || student.english > 100 ||
+        isNaN(student.math) || student.math < 0 || student.math > 100
+    ) {
+        alert("Please enter valid data. Marks should be between 0 and 100.");
+        return;
+    }
+
     if (id !== -1) {
         updateData(id, student)();
     }
     else {
         PostData(student)
     }
+    document.getElementById("form").reset();
 }
 
 
