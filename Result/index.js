@@ -77,15 +77,7 @@ const showData = (data) => {
         let td9 = document.createElement("td")
         td9.append(deleteBtn);
         tr.append(th,td1, td2, td3, td4, td5, td6, td7, td8, td9)
-        
-        if ((ele.hindi >= 0 && ele.hindi <= 100) && (ele.math >= 0 && ele.math <= 100) && (ele.english >= 0 && ele.english <= 100)) { 
-            document.getElementById("tbody").append(tr)
-        }
-        // else {
-        //     alert("Please enter mark between 0 and 100")
-        //     console.log("Please enter mark between 0 and 100")
-        // }
-   
+        document.getElementById("tbody").append(tr)
     })
 }
 
